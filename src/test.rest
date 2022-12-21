@@ -1,0 +1,30 @@
+GET http://localhost:5555/listofvendor
+
+
+###
+POST http://localhost:5555/createvendor
+content-type: application/json
+
+{
+    "vendorname": "Monica",
+    "bankaccnum": "8907654316",
+    "bankname":"SBI",
+    "city":"Bangalore",
+    "country":"India",
+    "addressline1":"#1134, Ground Floor,10th Block, Janapriya Township",
+    "addressline2":"Kadabagere Cross, Magadi Main road, Bangalore-562130",
+    "zipcode":"560023"
+
+}
+
+###
+PUT http://localhost:5555/updatevendor/639dc00ff1c34f57a05a4c34
+content-type: application/json
+
+{
+    "vendorname": "Meghana.R"
+}
+
+###
+DELETE http://localhost:5555/deletevendor/639dc00ff1c34f57a05a4c34
+content-type:application/json
